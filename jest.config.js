@@ -8,7 +8,7 @@ module.exports = {
   // Stop running tests after `n` failures
   // bail: 0,
 
-  // Respect "browser" field in package.json when resolving modules
+  // Respect 'browser' field in package.json when resolving modules
   // browser: false,
 
   // The directory where Jest should store its cached dependency information
@@ -24,7 +24,7 @@ module.exports = {
   // collectCoverageFrom: null,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -33,10 +33,10 @@ module.exports = {
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
-  //   "json",
-  //   "text",
-  //   "lcov",
-  //   "clover"
+  //   'json',
+  //   'text',
+  //   'lcov',
+  //   'clover'
   // ],
 
   // An object that configures minimum threshold enforcement for coverage results
@@ -62,17 +62,17 @@ module.exports = {
 
   // An array of directory names to be searched recursively up from the requiring module's location
   // moduleDirectories: [
-  //   "node_modules"
+  //   'node_modules'
   // ],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
-  //   "js",
-  //   "json",
-  //   "jsx",
-  //   "ts",
-  //   "tsx",
-  //   "node"
+  //   'js',
+  //   'json',
+  //   'jsx',
+  //   'ts',
+  //   'tsx',
+  //   'node'
   // ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
@@ -85,7 +85,7 @@ module.exports = {
   // notify: false,
 
   // An enum that specifies notification mode. Requires { notify: true }
-  // notifyMode: "failure-change",
+  // notifyMode: 'failure-change',
 
   // A preset that is used as a base for Jest's configuration
   // preset: null,
@@ -117,7 +117,7 @@ module.exports = {
   // ],
 
   // Allows you to use a custom runner instead of Jest's default test runner
-  // runner: "jest-runner",
+  // runner: 'jest-runner',
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
@@ -129,7 +129,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  testEnvironment: 'node'
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -155,13 +155,13 @@ module.exports = {
   // testResultsProcessor: null,
 
   // This option allows use of a custom test runner
-  // testRunner: "jasmine2",
+  // testRunner: 'jasmine2',
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
-  // testURL: "http://localhost",
+  // testURL: 'http://localhost',
 
-  // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
-  // timers: "real",
+  // Setting this value to 'fake' allows the use of fake timers for functions such as 'setTimeout'
+  // timers: 'real',
 
   // A map from regular expressions to paths to transformers
   // transform: null,
@@ -182,4 +182,4 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}
