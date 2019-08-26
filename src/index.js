@@ -28,6 +28,21 @@ function Result (ok, value) {
     }
   }
 
+  self.join = function join () {
+    if (value[isResult]) {
+      return value.match({
+        onOk (inner) {
+          return Ok(inner)
+        },
+        onErr (inner) {
+          return Err(inner)
+        }
+      })
+    } else {
+      return Result(ok, value)
+    }
+  }
+
   return self
 }
 

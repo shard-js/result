@@ -64,3 +64,39 @@ test('map ignores Err', () => {
     }
   })
 })
+
+test('join flattens nested result', () => {
+  const res = Ok(Err('hello'))
+  res.join().match({
+    onOk () {
+      throw new Error('should call onErr')
+    },
+    onErr (value) {
+      expect(value).toEqual('hello')
+    }
+  })
+})
+
+test('join ignores unnested Ok', () => {
+  const res = Ok('hello')
+  res.join().match({
+    onOk (val) {
+      expect(val).toEqual('hello')
+    },
+    onErr () {
+      throw new Error('should call onOk')
+    }
+  })
+})
+
+test('join ignores unnested Err', () => {
+  const res = Err('hello')
+  res.join().match({
+    onErr (val) {
+      expect(val).toEqual('hello')
+    },
+    onOk () {
+      throw new Error('should call onErr')
+    }
+  })
+})
