@@ -1,6 +1,6 @@
 {
   "name": "@shards/result",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Result type for javascript, not compliant with fantasyland spec",
   "main": "dist/result.web.js",
   "scripts": {
