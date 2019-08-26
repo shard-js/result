@@ -5,7 +5,7 @@ function Result (ok, value) {
 
   self[isResult] = true
 
-  self.match = function match (onOk, onErr) {
+  self.match = function match ({ onOk, onErr }) {
     if (ok) {
       return onOk(value)
     } else {
