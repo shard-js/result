@@ -38,3 +38,29 @@ test('passes value from Err', () => {
     onErr: val => expect(val).toEqual('hello')
   })
 })
+
+test('map transforms Ok', () => {
+  let res = Ok('hello')
+  res = res.map(s => `${s} world!`)
+  res.match({
+    onOk (val) {
+      expect(val).toEqual('hello world!')
+    },
+    onErr () {
+      throw new Error()
+    }
+  })
+})
+
+test('map ignores Err', () => {
+  let res = Err('hello')
+  res = res.map(s => `${s} world!`)
+  res.match({
+    onOk () {
+      throw new Error()
+    },
+    onErr (val) {
+      expect(val).toEqual('hello')
+    }
+  })
+})
