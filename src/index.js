@@ -13,6 +13,21 @@ function Result (ok, value) {
     }
   }
 
+  /**
+   * map calls a transform on Result if it is "Ok",
+   * otherwise maintaining the previous "Err" value
+   */
+  self.map = function map (transform) {
+    if (typeof transform !== 'function') {
+      throw new TypeError('argument to map must be a function')
+    }
+    if (ok) {
+      return Ok(transform(value))
+    } else {
+      return Err(value)
+    }
+  }
+
   return self
 }
 
