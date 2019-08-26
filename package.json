@@ -1,8 +1,8 @@
 {
-  "name": "@shards/js-lib-template",
+  "name": "@shards/result",
   "version": "1.0.0",
   "description": "A description for the library",
-  "main": "dist/js-lib-template.web.js",
+  "main": "dist/result.web.js",
   "scripts": {
     "test": "jest --coverage",
     "build": "shard build",
@@ -20,9 +20,9 @@
   "author": "Parasrah",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Parasrah/js-lib-template/issues"
+    "url": "https://github.com/shard-js/result/issues"
   },
-  "homepage": "https://github.com/Parasrah/js-lib-template#readme",
+  "homepage": "https://github.com/shard-js/result#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",

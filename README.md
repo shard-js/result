@@ -8,31 +8,31 @@
 for npm:
 
 ```
-npm i @shards/%%LIBNAME%%
+npm i @shards/result
 ```
 
 for yarn:
 
 ```
-yarn add @shards/%%LIBNAME%%
+yarn add @shards/result
 ```
 
 to require:
 
 ```
-const Maybe = require('@shards/%%LIBNAME%%').default
+const Maybe = require('@shards/result').default
 ```
 
 to import (es6 modules):
 
 ```
-import Maybe from '@shards/%%LIBNAME%%'
+import Maybe from '@shards/result'
 ```
 
 for node:
 
 ```
-import Maybe from '@shards/maybe/dist/%%LIBNAME%%.node.js'
+import Maybe from '@shards/maybe/dist/result.node.js'
 ```
 
 ## usage
